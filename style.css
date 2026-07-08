@@ -1,20 +1,65 @@
 * {
   box-sizing: border-box;
+  --profile-size: 150px;
+}
+
+html {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  color: rgb(95, 94, 94);
+}
+
+body {
+  background-image: url(assets/img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
 }
 
 .userCard {
+  background-color: aliceblue;
+  margin: 200px auto 0;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
 }
 
-.userProfile {
+.imgWrapper {
+  height: var(--profile-size);
+  width: var(--profile-size);
+  border: 2px solid purple;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px white;
+  margin-top: calc((var(--profile-size) / 1.8) * (-1));
+}
+
+.imgWrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 h1 {
+  font-size: 1.6rem;
 }
 
 .userJob {
+  font-style: oblique;
 }
 
 .userLocation {
+  color: rgb(95, 94, 94, 0.6);
+}
+
+.line {
+  align-self: stretch;
+  height: 2px;
+  border: 1px solid rgb(95, 94, 94, 0.2);
 }
 
 .userFollowers {
@@ -24,4 +69,11 @@ h1 {
 }
 
 .userLinks {
+  display: flex;
+  gap: 5px;
+}
+
+.shadow {
+  padding-right: 5px;
+  box-shadow: 1px 0px 0px gray;
 }
