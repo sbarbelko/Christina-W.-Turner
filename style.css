@@ -11,15 +11,14 @@ html {
 
 body {
   background-image: url(assets/img/bg.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100%;
+  background-size: 1000px;
 }
 
 .userCard {
   background-color: aliceblue;
-  margin: 200px auto 0;
+  margin: 150px auto 0;
   max-width: 300px;
   display: flex;
   flex-direction: column;
