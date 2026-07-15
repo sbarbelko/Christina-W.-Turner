@@ -21,6 +21,11 @@ body {
   background-size: 1000px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .userCard {
   background-color: aliceblue;
   margin: 150px auto 0;
@@ -90,6 +95,11 @@ h1 {
 .userLinks {
   display: flex;
   gap: 5px;
+}
+
+.links:hover {
+  color: black;
+  transform: scale(1.2);
 }
 
 .shadow {
